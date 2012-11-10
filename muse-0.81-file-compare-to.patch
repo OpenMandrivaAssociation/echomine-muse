@@ -1,0 +1,15 @@
+--- src/alt/java/io/FileImpl.java.orig	2007-12-29 07:19:46.000000000 +0100
++++ src/alt/java/io/FileImpl.java	2007-12-29 07:21:01.000000000 +0100
+@@ -171,7 +171,11 @@
+     }
+ 
+     public int compareTo(Object o) {
+-        return file.compareTo(o);
++        if (!(o instanceof java.io.File)) {
++            return -1;
++        }
++
++        return file.compareTo((java.io.File) o);
+     }
+ 
+     public java.io.File getRealFile() {
