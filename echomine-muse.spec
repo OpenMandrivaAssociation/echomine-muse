@@ -8,7 +8,7 @@ Epoch:          0
 Summary:        Java API for XMPP/Jabber
 License:        GPL
 Group:          Development/Java
-URL:            http://open.echomine.org/confluence/display/MUSE/Muse+Home
+URL:            https://open.echomine.org/confluence/display/MUSE/Muse+Home
 Source0:        http://download.berlios.de/muse/muse-0.81.tar.gz
 Patch0:         muse-0.81-file-compare-to.patch
 Requires:       jakarta-commons-logging
